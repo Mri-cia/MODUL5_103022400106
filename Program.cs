@@ -1,26 +1,28 @@
 ﻿
 <<<<<<< HEAD
 
-public class PemrosesData<T> 
-{ 
-    public void DapatkanNilaiTerbesar(T param1, T param2, T param3) 
+public class PemrosesData<T>
+{
+    public void DapatkanNilaiTerbesar(T param1, T param2, T param3)
     {
-        dynamic a = param1; 
-        dynamic b = param2; 
-        dynamic c = param3; 
- 
-        if (a >= b && a >= c) 
-        { 
-            Console.WriteLine($"Nilai terbesar adalah: {a}"); 
-        } 
-        else if (b >= a && b >= c) 
-        { 
-            Console.WriteLine($"Nilai terbesar adalah: {b}"); 
-        } 
-        else 
-        { 
+        dynamic a = param1;
+        dynamic b = param2;
+        dynamic c = param3;
+
+        if (a >= b && a >= c)
+        {
+            Console.WriteLine($"Nilai terbesar adalah: {a}");
+        }
+        else if (b >= a && b >= c)
+        {
+            Console.WriteLine($"Nilai terbesar adalah: {b}");
+        }
+        else
+        {
             Console.WriteLine($"Nilai terbesar adalah: {c}");
-=======
+        }
+    }
+}
 public class SimpleDataBase<T>
 {
     List<T> storedData { get; set; }
@@ -43,12 +45,9 @@ public class SimpleDataBase<T>
         for (int i = 0; i < storedData.Count; i++)
         {
             Console.WriteLine($"Data { i + 1 } berisi: { storedData[i] }, yang disimpan pada waktu UTC: { inputDates[i] }");
->>>>>>> implementasi-generic-class
         }
     }
 }
-
-<<<<<<< HEAD
 public class Program
 {
     static int nilai1 = 10;
@@ -58,17 +57,10 @@ public class Program
     {
         PemrosesData<int> pemroses = new PemrosesData<int>();
         pemroses.DapatkanNilaiTerbesar(nilai1, nilai2, nilai3);
-=======
-
-public class Program
-{
-    public static void Main()
-    {
         SimpleDataBase<int> intDataBase = new SimpleDataBase<int>();
         intDataBase.AddNewData(10);
         intDataBase.AddNewData(60);
         intDataBase.AddNewData(22);
         intDataBase.PrintAllData();
->>>>>>> implementasi-generic-class
     }
 }
