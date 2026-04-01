@@ -1,5 +1,4 @@
 ﻿
-<<<<<<< HEAD
 
 public class PemrosesData<T>
 {
